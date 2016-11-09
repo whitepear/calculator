@@ -56,7 +56,7 @@ body {
 	border: none;
 	font: bold 18px Arial, sans-serif;
 	box-shadow: 0px 4px #ccc;
-	transition: position 0.2s ease, box-shadow 0.03s ease;
+	transition: transform 0.075s ease-out, box-shadow 0.075s ease-out;
 }
 
 .keys button:hover {
@@ -65,9 +65,12 @@ body {
 	box-shadow: 0px 4px #aaa;
 }
 
+.keys button:active {	
+	transform: translateY(4px);
+}
+
 .keys .digitInput:active, .keys .decimal:active {	
 	box-shadow: 0px 0px #aaa;
-	top: 4px;
 }
 
 #zero {
@@ -87,8 +90,7 @@ body {
 }
 
 .keys .clear:active {
-	box-shadow: 0px 0px #cc5800;
-	top: 4px;
+	box-shadow: 0px 0px #cc5800;	
 }
 
 .keys .equals {
@@ -127,7 +129,7 @@ body {
 
 .keys .operator:active {
 	box-shadow: 0px 0px #a47c17;
-	top: 4px;
+	
 }
 
 .keys .backspace {	
@@ -142,8 +144,7 @@ body {
 }
 
 .keys .backspace:active {
-	box-shadow: 0px 0px #a47c17;
-	top: 4px;
+	box-shadow: 0px 0px #a47c17;	
 }
 
 /* Extra Small Styles */

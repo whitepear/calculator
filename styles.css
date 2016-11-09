@@ -1,0 +1,155 @@
+html {
+  height: 100%;	  
+  overflow-y: hidden;
+}
+
+body {
+  min-height: 100%;
+  overflow-y: hidden;
+  background: radial-gradient(circle, #fff 20%, #ccc);	
+}
+
+.calculator {
+	position: relative;
+	margin-top: 50px;
+	width: 340px;
+	margin: 50px auto;
+	background-color: #cd2626;
+	border-radius: 5px;
+	padding: 20px 10px;
+	box-shadow: 0px 4px #8b1a1a, 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.display {		
+	height: 60px;
+	background-color: white;
+	color: #333;
+	text-align: right;	
+	font: bold 45px Arial, sans-serif;
+	box-shadow: 0px 6px #ccc inset;
+	overflow: hidden;	
+	border-radius: 3px;
+	margin-bottom: 15px;
+	padding: 5px 3px 0px 5px;
+}
+
+.test {
+	width: 500px;
+	padding: 5%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.keys {
+	margin: 0 auto;
+}
+
+.keys button {
+	position: relative;
+	display: inline-block;
+	padding: 10px 25px;
+	width: 75px;
+	margin: 4px 1px;
+	color: #666;
+	background-color: #fff;
+	border-radius: 4px;
+	border: none;
+	font: bold 18px Arial, sans-serif;
+	box-shadow: 0px 4px #ccc;
+	transition: position 0.2s ease, box-shadow 0.03s ease;
+}
+
+.keys button:hover {
+	background-color: #cdcdcd;
+	color: #000;
+	box-shadow: 0px 4px #aaa;
+}
+
+.keys .digitInput:active, .keys .decimal:active {	
+	box-shadow: 0px 0px #aaa;
+	top: 4px;
+}
+
+#zero {
+	width: 156px;
+}
+
+.keys .clear {
+	background-color: #ff7f00;
+	color: #fff;
+	box-shadow: 0px 4px #cd6000;
+}
+
+.keys .clear:hover {
+	background-color: #e57200;
+	box-shadow: 0px 4px #cc5800;
+	color: #fff;
+}
+
+.keys .clear:active {
+	box-shadow: 0px 0px #cc5800;
+	top: 4px;
+}
+
+.keys .equals {
+	position: absolute;
+	height: 92px;
+	bottom: 20px;
+	right: 10px;
+	background-color: #66cd00;
+	color: #fff;
+	box-shadow: 0px 4px #51a400;
+}
+
+.keys .equals:hover {
+	background-color: #5bb800;
+	box-shadow: 0px 4px #478f00;
+	color: #fff;
+}
+
+.keys .equals:active {
+	bottom: 16px;
+	right: 10px;
+	box-shadow: 0px 0px #478f00;
+}
+
+.keys .operator {
+	color: #555;
+	background-color: #ffc125;
+	box-shadow: 0px 4px #cd9b1d;
+}
+
+.keys .operator:hover {
+	background-color: #cc9a1d;
+	box-shadow: 0px 4px #a47c17;
+	color: #fff;
+}
+
+.keys .operator:active {
+	box-shadow: 0px 0px #a47c17;
+	top: 4px;
+}
+
+.keys .backspace {	
+	background-color: #ffc125;
+	box-shadow: 0px 4px #cd9b1d;
+}
+
+.keys .backspace:hover {
+	background-color: #cc9a1d;
+	box-shadow: 0px 4px #a47c17;
+	color: #fff;
+}
+
+.keys .backspace:active {
+	box-shadow: 0px 0px #a47c17;
+	top: 4px;
+}
+
+/* Extra Small Styles */
+@media (max-width: 767px) {
+	.container {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
